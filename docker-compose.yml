@@ -21,6 +21,8 @@ services:
     depends_on:
       - database
     env_file:
-    - ".env"       
+    - ".env"
+    stdin_open: true
+    tty: true
 volumes:
   postgresql_data:
