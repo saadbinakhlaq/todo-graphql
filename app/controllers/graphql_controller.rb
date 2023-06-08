@@ -11,6 +11,8 @@ class GraphqlController < ApplicationController
     context = {
       # Query context goes here, for example:
       # current_user: current_user,
+      current_user: current_user,
+      decoded_token: decoded_token
     }
     result = AppSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
     render json: result
@@ -20,6 +22,33 @@ class GraphqlController < ApplicationController
   end
 
   private
+
+  def current_user
+    @current_user = nil
+    if decoded_token
+      data = decoded_token
+      user = User.find(data[:user_id]) if data[:user_id].present?
+      if data[:user_id].present? && !user.nil?
+        @current_user ||= user
+      end
+    end
+  end
+
+  def decoded_token
+    header = request.headers['Authorization']
+    header = header.split(' ').last if header
+    if header
+      begin
+        @decoded_token ||= JsonWebToken.decode(header)
+      rescue JWT::DecodeError => e
+        raise GraphQL::ExecutionError.new(e.message)
+      rescue StandardError => e
+        raise GraphQL::ExecutionError.new(e.message)
+      rescue e
+        raise GraphQL::ExecutionError.new(e.message)
+      end
+    end
+  end
 
   # Handle variables in form data, JSON body, or a blank value
   def prepare_variables(variables_param)

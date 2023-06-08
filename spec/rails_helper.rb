@@ -67,3 +67,10 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
+
+def sign_in_test_headers(user)
+  headers = {}
+  headers['ACCEPT'] = 'application/json'
+  headers['Authorization'] = 'Bearer ' + JsonWebToken.encode({user_id: user.id}).to_s
+  headers
+end
