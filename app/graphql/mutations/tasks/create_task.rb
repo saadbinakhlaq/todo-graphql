@@ -9,16 +9,24 @@ module Mutations
 
       def resolve(input: nil)
         authenticate_user
-        list = context[:current_user].lists.find(input.list_id)
-        if list
-          task = list.tasks.build(name: input.name)
-          if task.save
-            {task: task}
+
+        task = if input.list_id
+          users_list = context[:current_user].lists.find(input.list_id)
+
+          if users_list
+            users_list.tasks.build(name: input.name)
           else
-            raise GraphQL::ExecutionError.new(task.errors.full_messages.join(', '))
+            raise GraphQL::ExecutionError.new("List Not Found")
           end
         else
-          raise GraphQL::ExecutionError.new("List Not Found")
+          users_list = context[:current_user].lists.find_or_create_by(name: "default")
+          users_list.tasks.build(name: input.name)
+        end
+
+        if task.save
+          {task: task}
+        else
+          raise GraphQL::ExecutionError.new(task.errors.full_messages.join(', '))
         end
       end
     end

@@ -8,4 +8,5 @@ class User < ApplicationRecord
   validates :password, length: {minimum: 8, maximum: 72}
 
   has_many :lists, dependent: :destroy
+  has_many :external_access_tokens, dependent: :destroy
 end

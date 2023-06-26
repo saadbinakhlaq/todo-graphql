@@ -1,4 +1,4 @@
 #!/bin/sh
 
 rm -f tmp/pids/server.pid
-bin/rails server -b 0.0.0.0 -p 3000
+bin/rails server -b 0.0.0.0 -p 5000

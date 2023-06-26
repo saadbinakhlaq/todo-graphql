@@ -74,3 +74,10 @@ def sign_in_test_headers(user)
   headers['Authorization'] = 'Bearer ' + JsonWebToken.encode({user_id: user.id}).to_s
   headers
 end
+
+VCR.configure do |config|
+  config.cassette_library_dir = "#{::Rails.root}/spec/cassettes"
+  config.hook_into :webmock
+  config.ignore_localhost = true
+  config.configure_rspec_metadata!
+end

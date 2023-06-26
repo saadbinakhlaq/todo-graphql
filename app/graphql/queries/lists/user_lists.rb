@@ -9,7 +9,6 @@ module Queries
         authenticate_user
         context[:current_user].lists
       end
-
     end
   end
 end

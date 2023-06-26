@@ -1,0 +1,269 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.microsoft.com/v1.0/me/todo/lists
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer EwCAA8l6BAAUAOyDv0l6PcCVu89kmzvqZmkWABkAAUX2EFonmwUPl4TpAsh/pmpIeF4cGQn/YVSnw5N8/WhXx/Dvx4lcA9CB2wG0HFjLPI5GZmurGFxydgOGVZKBvROf+eiKixovilNPmVOHihCi6kIfTpI63+7BfL3dJ2iFe9kFhQx3A1iSd6ltfjpAKpm4196Bd8w/DjYlrJ3BH+yTV/qx5AgewasZBHeqjC46UcNfOcrTyj0BcpC385ZJNtJhN6OcUdG6e8HwchGbzCHfD02nE98Bzyx2BN/G1fkGWi7WWDCJfDKfbSjaGe18FLxiSQgU+e1NyNAl4fEaDrr60qyswWofpdSLTwvSzlkD95qgfczNZ6DryaQiAbuwwJwDZgAACLSV8+9VS4JxUAK+t4oh78gCe/tqNziq7GeJGqpT7EigZ1oPcviSGdy8muRojOGEBRdZ53nBc6FSQaTWHhOdhyj0r6H12DXVXLv3rt6KpnCiqNr8ywb+KBKGMDi4Q7DRdyDEkAU6YdyXwzYX9GlUy+ZQqmhio4kzqVTJhwXmrC6iUmyjAG6As2rCbC1N404kHSbRHlp7iSSnQJWdZnB7co/SYA00u1mIf+1Gf6MZ03ib54dG2oaS4N6PXWpkWg1xLbWIkJHMTjaNkAQpsLcGcslwuLrJwfEgsYvl+nyTyx8dDsdv2kAm0Lrg6tErS8IOorRS6cEBhVE0LwTb+TuW6GPA2XMlNy7+haVU1646iq7oKQLQzN5jcbDLpQ09WjnraqcVtMUER8wuhAQVYP0TDsD2o5vHGtOkEOf8IhOssFDlEdkdgTmGfw20xs1Y4TfcKCQWhfgXTKieb8jKuFUi6F2vuXt4bw0+qqJ3rlcREodIOmCYXJmMsnsWhjaR0Ta5UI5YtEKvQuDeIp2LZ3TpsfwFyLbdK0vpebqtlDLxhJ2XvYgQ8kvCWs3nayUgRlk4SKPzcwUQj4nA/ESCaNiMjC3+UEHUWO7YlW53q/TxiqVbJT0+1Zm2ZjVZvkLLgJXtDdrTkD3Q7RjypnfHhB4XC0WI2Ksbf0TcRahf6VtGLtRFdnkZCAvqWvwrHEg+WZMc2t6dAMIrU/cwDwYeW0qrPb56jJ8kQyVine5/ZrKzjR0trGKf0PyOJZLhcM+/pCRMIE28tu4nXO/E66543GaCLSKcmiYMrt0Yq/zokgI=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      Request-Id:
+      - 77bc1e1c-ff53-4bf7-9436-63db651da10f
+      Client-Request-Id:
+      - 77bc1e1c-ff53-4bf7-9436-63db651da10f
+      X-Ms-Ags-Diagnostic:
+      - '{"ServerInfo":{"DataCenter":"Germany West Central","Slice":"E","Ring":"5","ScaleUnit":"001","RoleInstance":"FR2PEPF00000207"}}'
+      Odata-Version:
+      - '4.0'
+      Date:
+      - Mon, 26 Jun 2023 05:55:40 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(''saadbinakhlaq%40outlook.com'')/todo/lists","value":[{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGWg/Gug==\"","displayName":"Tasks","isOwner":true,"isShared":false,"wellknownListName":"defaultList","id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAACARIAAAA="},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGWg/GvA==\"","displayName":"My
+        new list","isOwner":true,"isShared":false,"wellknownListName":"none","id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAZSK4BnAAAA"},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXYPNgQ==\"","displayName":"My
+        new list (1)","isOwner":true,"isShared":false,"wellknownListName":"none","id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAZdgUWEAAAA"},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXYPNhg==\"","displayName":"My
+        new list (2)","isOwner":true,"isShared":false,"wellknownListName":"none","id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAZdgUWFAAAA"},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGUi6jpA==\"","displayName":"Flagged
+        Emails","isOwner":true,"isShared":false,"wellknownListName":"flaggedEmails","id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAZSK4BlAAAA"}]}'
+  recorded_at: Mon, 26 Jun 2023 05:55:40 GMT
+- request:
+    method: get
+    uri: https://graph.microsoft.com/v1.0/me/todo/lists/AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAACARIAAAA=/tasks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer EwCAA8l6BAAUAOyDv0l6PcCVu89kmzvqZmkWABkAAUX2EFonmwUPl4TpAsh/pmpIeF4cGQn/YVSnw5N8/WhXx/Dvx4lcA9CB2wG0HFjLPI5GZmurGFxydgOGVZKBvROf+eiKixovilNPmVOHihCi6kIfTpI63+7BfL3dJ2iFe9kFhQx3A1iSd6ltfjpAKpm4196Bd8w/DjYlrJ3BH+yTV/qx5AgewasZBHeqjC46UcNfOcrTyj0BcpC385ZJNtJhN6OcUdG6e8HwchGbzCHfD02nE98Bzyx2BN/G1fkGWi7WWDCJfDKfbSjaGe18FLxiSQgU+e1NyNAl4fEaDrr60qyswWofpdSLTwvSzlkD95qgfczNZ6DryaQiAbuwwJwDZgAACLSV8+9VS4JxUAK+t4oh78gCe/tqNziq7GeJGqpT7EigZ1oPcviSGdy8muRojOGEBRdZ53nBc6FSQaTWHhOdhyj0r6H12DXVXLv3rt6KpnCiqNr8ywb+KBKGMDi4Q7DRdyDEkAU6YdyXwzYX9GlUy+ZQqmhio4kzqVTJhwXmrC6iUmyjAG6As2rCbC1N404kHSbRHlp7iSSnQJWdZnB7co/SYA00u1mIf+1Gf6MZ03ib54dG2oaS4N6PXWpkWg1xLbWIkJHMTjaNkAQpsLcGcslwuLrJwfEgsYvl+nyTyx8dDsdv2kAm0Lrg6tErS8IOorRS6cEBhVE0LwTb+TuW6GPA2XMlNy7+haVU1646iq7oKQLQzN5jcbDLpQ09WjnraqcVtMUER8wuhAQVYP0TDsD2o5vHGtOkEOf8IhOssFDlEdkdgTmGfw20xs1Y4TfcKCQWhfgXTKieb8jKuFUi6F2vuXt4bw0+qqJ3rlcREodIOmCYXJmMsnsWhjaR0Ta5UI5YtEKvQuDeIp2LZ3TpsfwFyLbdK0vpebqtlDLxhJ2XvYgQ8kvCWs3nayUgRlk4SKPzcwUQj4nA/ESCaNiMjC3+UEHUWO7YlW53q/TxiqVbJT0+1Zm2ZjVZvkLLgJXtDdrTkD3Q7RjypnfHhB4XC0WI2Ksbf0TcRahf6VtGLtRFdnkZCAvqWvwrHEg+WZMc2t6dAMIrU/cwDwYeW0qrPb56jJ8kQyVine5/ZrKzjR0trGKf0PyOJZLhcM+/pCRMIE28tu4nXO/E66543GaCLSKcmiYMrt0Yq/zokgI=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      Request-Id:
+      - 36a356c9-ad46-4161-9142-421296bee8a3
+      Client-Request-Id:
+      - 36a356c9-ad46-4161-9142-421296bee8a3
+      X-Ms-Ags-Diagnostic:
+      - '{"ServerInfo":{"DataCenter":"Germany West Central","Slice":"E","Ring":"5","ScaleUnit":"001","RoleInstance":"FR2PEPF0000033F"}}'
+      Odata-Version:
+      - '4.0'
+      Date:
+      - Mon, 26 Jun 2023 05:55:41 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(''saadbinakhlaq%40outlook.com'')/todo/lists(''AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAACARIAAAA%3D'')/tasks","value":[{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXr/3nw==\"","importance":"normal","isReminderOn":false,"status":"completed","title":"Hello","createdDateTime":"2023-06-25T18:02:30.7055307Z","lastModifiedDateTime":"2023-06-25T18:12:32.343471Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAACARIAAADUCYAPaDqZQKAN20RdQAPMAAZevboLAAAA","body":{"content":"","contentType":"text"},"completedDateTime":{"dateTime":"2023-06-24T22:00:00.0000000","timeZone":"UTC"}},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXr/3hQ==\"","importance":"normal","isReminderOn":false,"status":"completed","title":"My
+        new task","createdDateTime":"2023-06-25T08:26:50.7129943Z","lastModifiedDateTime":"2023-06-25T17:58:51.2949556Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAACARIAAADUCYAPaDqZQKAN20RdQAPMAAZevboKAAAA","body":{"content":"","contentType":"text"},"completedDateTime":{"dateTime":"2023-06-24T22:00:00.0000000","timeZone":"UTC"}},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXr/sMw==\"","importance":"normal","isReminderOn":false,"status":"completed","title":"new
+        task","createdDateTime":"2023-06-09T12:19:11.3624291Z","lastModifiedDateTime":"2023-06-25T08:06:05.3450941Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAACARIAAADUCYAPaDqZQKAN20RdQAPMAAZSK5IKAAAA","body":{"content":"","contentType":"text"},"completedDateTime":{"dateTime":"2023-06-24T22:00:00.0000000","timeZone":"UTC"}},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXr/sEg==\"","importance":"normal","isReminderOn":false,"status":"completed","title":"another
+        task","createdDateTime":"2023-06-09T12:15:08.0968311Z","lastModifiedDateTime":"2023-06-25T07:44:01.7937919Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAACARIAAADUCYAPaDqZQKAN20RdQAPMAAZSK5IJAAAA","body":{"content":"","contentType":"text"},"completedDateTime":{"dateTime":"2023-06-24T22:00:00.0000000","timeZone":"UTC"}},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXr/sDw==\"","importance":"normal","isReminderOn":false,"status":"completed","title":"do
+        something","createdDateTime":"2023-06-08T22:08:18.7811058Z","lastModifiedDateTime":"2023-06-25T07:43:59.5748952Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAACARIAAADUCYAPaDqZQKAN20RdQAPMAAZSK5IIAAAA","body":{"content":"","contentType":"text"},"completedDateTime":{"dateTime":"2023-06-24T22:00:00.0000000","timeZone":"UTC"}},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXr/vtg==\"","importance":"normal","isReminderOn":false,"status":"completed","title":"(no
+        subject)","createdDateTime":"2016-09-13T17:51:48.3051311Z","lastModifiedDateTime":"2023-06-25T08:23:41.1668343Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAACARIAAADUCYAPaDqZQKAN20RdQAPMAAACbKcAAAA=","body":{"content":"","contentType":"text"},"completedDateTime":{"dateTime":"2023-06-24T22:00:00.0000000","timeZone":"UTC"}},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXr/vsw==\"","importance":"normal","isReminderOn":false,"status":"completed","title":"(no
+        subject)","createdDateTime":"2016-09-13T17:51:48.2650977Z","lastModifiedDateTime":"2023-06-25T08:23:40.5931267Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAACARIAAADUCYAPaDqZQKAN20RdQAPMAAACbKYAAAA=","body":{"content":"","contentType":"text"},"completedDateTime":{"dateTime":"2023-06-24T22:00:00.0000000","timeZone":"UTC"}},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXr/vsA==\"","importance":"normal","isReminderOn":false,"status":"completed","title":"(no
+        subject)","createdDateTime":"2016-09-13T17:51:48.2290676Z","lastModifiedDateTime":"2023-06-25T08:23:40.5051758Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAACARIAAADUCYAPaDqZQKAN20RdQAPMAAACbKUAAAA=","body":{"content":"","contentType":"text"},"completedDateTime":{"dateTime":"2023-06-24T22:00:00.0000000","timeZone":"UTC"}}]}'
+  recorded_at: Mon, 26 Jun 2023 05:55:41 GMT
+- request:
+    method: get
+    uri: https://graph.microsoft.com/v1.0/me/todo/lists/AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAZSK4BnAAAA/tasks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer EwCAA8l6BAAUAOyDv0l6PcCVu89kmzvqZmkWABkAAUX2EFonmwUPl4TpAsh/pmpIeF4cGQn/YVSnw5N8/WhXx/Dvx4lcA9CB2wG0HFjLPI5GZmurGFxydgOGVZKBvROf+eiKixovilNPmVOHihCi6kIfTpI63+7BfL3dJ2iFe9kFhQx3A1iSd6ltfjpAKpm4196Bd8w/DjYlrJ3BH+yTV/qx5AgewasZBHeqjC46UcNfOcrTyj0BcpC385ZJNtJhN6OcUdG6e8HwchGbzCHfD02nE98Bzyx2BN/G1fkGWi7WWDCJfDKfbSjaGe18FLxiSQgU+e1NyNAl4fEaDrr60qyswWofpdSLTwvSzlkD95qgfczNZ6DryaQiAbuwwJwDZgAACLSV8+9VS4JxUAK+t4oh78gCe/tqNziq7GeJGqpT7EigZ1oPcviSGdy8muRojOGEBRdZ53nBc6FSQaTWHhOdhyj0r6H12DXVXLv3rt6KpnCiqNr8ywb+KBKGMDi4Q7DRdyDEkAU6YdyXwzYX9GlUy+ZQqmhio4kzqVTJhwXmrC6iUmyjAG6As2rCbC1N404kHSbRHlp7iSSnQJWdZnB7co/SYA00u1mIf+1Gf6MZ03ib54dG2oaS4N6PXWpkWg1xLbWIkJHMTjaNkAQpsLcGcslwuLrJwfEgsYvl+nyTyx8dDsdv2kAm0Lrg6tErS8IOorRS6cEBhVE0LwTb+TuW6GPA2XMlNy7+haVU1646iq7oKQLQzN5jcbDLpQ09WjnraqcVtMUER8wuhAQVYP0TDsD2o5vHGtOkEOf8IhOssFDlEdkdgTmGfw20xs1Y4TfcKCQWhfgXTKieb8jKuFUi6F2vuXt4bw0+qqJ3rlcREodIOmCYXJmMsnsWhjaR0Ta5UI5YtEKvQuDeIp2LZ3TpsfwFyLbdK0vpebqtlDLxhJ2XvYgQ8kvCWs3nayUgRlk4SKPzcwUQj4nA/ESCaNiMjC3+UEHUWO7YlW53q/TxiqVbJT0+1Zm2ZjVZvkLLgJXtDdrTkD3Q7RjypnfHhB4XC0WI2Ksbf0TcRahf6VtGLtRFdnkZCAvqWvwrHEg+WZMc2t6dAMIrU/cwDwYeW0qrPb56jJ8kQyVine5/ZrKzjR0trGKf0PyOJZLhcM+/pCRMIE28tu4nXO/E66543GaCLSKcmiYMrt0Yq/zokgI=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      Request-Id:
+      - 4eba6654-1222-4f7b-9543-0f7b17d9fe1d
+      Client-Request-Id:
+      - 4eba6654-1222-4f7b-9543-0f7b17d9fe1d
+      X-Ms-Ags-Diagnostic:
+      - '{"ServerInfo":{"DataCenter":"Germany West Central","Slice":"E","Ring":"5","ScaleUnit":"002","RoleInstance":"FR3PEPF0000016B"}}'
+      Odata-Version:
+      - '4.0'
+      Date:
+      - Mon, 26 Jun 2023 05:55:41 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(''saadbinakhlaq%40outlook.com'')/todo/lists(''AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAZSK4BnAAAA'')/tasks","value":[{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXYPPfQ==\"","importance":"normal","isReminderOn":false,"status":"notStarted","title":"asdsad","createdDateTime":"2023-06-24T06:17:09.4903531Z","lastModifiedDateTime":"2023-06-24T06:27:11.9408365Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAZSK4BnAAAA1AmAD2g6mUCgDdtEXUADzAAGXYGH9AAAAA==","body":{"content":"","contentType":"text"}},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXr/v4Q==\"","importance":"normal","isReminderOn":false,"status":"completed","title":"asdsad","createdDateTime":"2023-06-24T06:17:06.5968266Z","lastModifiedDateTime":"2023-06-25T08:28:09.4679183Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAZSK4BnAAAA1AmAD2g6mUCgDdtEXUADzAAGXYGH8wAAAA==","body":{"content":"","contentType":"text"},"completedDateTime":{"dateTime":"2023-06-24T22:00:00.0000000","timeZone":"UTC"}},{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXr/3lg==\"","importance":"normal","isReminderOn":false,"status":"completed","title":"doing
+        something","createdDateTime":"2023-06-08T22:09:54.5784775Z","lastModifiedDateTime":"2023-06-25T18:03:58.4155623Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAZSK4BnAAAA1AmAD2g6mUCgDdtEXUADzAAGUiuV9gAAAA==","body":{"content":"","contentType":"text"},"completedDateTime":{"dateTime":"2023-06-24T22:00:00.0000000","timeZone":"UTC"}}]}'
+  recorded_at: Mon, 26 Jun 2023 05:55:42 GMT
+- request:
+    method: get
+    uri: https://graph.microsoft.com/v1.0/me/todo/lists/AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAZdgUWEAAAA/tasks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer EwCAA8l6BAAUAOyDv0l6PcCVu89kmzvqZmkWABkAAUX2EFonmwUPl4TpAsh/pmpIeF4cGQn/YVSnw5N8/WhXx/Dvx4lcA9CB2wG0HFjLPI5GZmurGFxydgOGVZKBvROf+eiKixovilNPmVOHihCi6kIfTpI63+7BfL3dJ2iFe9kFhQx3A1iSd6ltfjpAKpm4196Bd8w/DjYlrJ3BH+yTV/qx5AgewasZBHeqjC46UcNfOcrTyj0BcpC385ZJNtJhN6OcUdG6e8HwchGbzCHfD02nE98Bzyx2BN/G1fkGWi7WWDCJfDKfbSjaGe18FLxiSQgU+e1NyNAl4fEaDrr60qyswWofpdSLTwvSzlkD95qgfczNZ6DryaQiAbuwwJwDZgAACLSV8+9VS4JxUAK+t4oh78gCe/tqNziq7GeJGqpT7EigZ1oPcviSGdy8muRojOGEBRdZ53nBc6FSQaTWHhOdhyj0r6H12DXVXLv3rt6KpnCiqNr8ywb+KBKGMDi4Q7DRdyDEkAU6YdyXwzYX9GlUy+ZQqmhio4kzqVTJhwXmrC6iUmyjAG6As2rCbC1N404kHSbRHlp7iSSnQJWdZnB7co/SYA00u1mIf+1Gf6MZ03ib54dG2oaS4N6PXWpkWg1xLbWIkJHMTjaNkAQpsLcGcslwuLrJwfEgsYvl+nyTyx8dDsdv2kAm0Lrg6tErS8IOorRS6cEBhVE0LwTb+TuW6GPA2XMlNy7+haVU1646iq7oKQLQzN5jcbDLpQ09WjnraqcVtMUER8wuhAQVYP0TDsD2o5vHGtOkEOf8IhOssFDlEdkdgTmGfw20xs1Y4TfcKCQWhfgXTKieb8jKuFUi6F2vuXt4bw0+qqJ3rlcREodIOmCYXJmMsnsWhjaR0Ta5UI5YtEKvQuDeIp2LZ3TpsfwFyLbdK0vpebqtlDLxhJ2XvYgQ8kvCWs3nayUgRlk4SKPzcwUQj4nA/ESCaNiMjC3+UEHUWO7YlW53q/TxiqVbJT0+1Zm2ZjVZvkLLgJXtDdrTkD3Q7RjypnfHhB4XC0WI2Ksbf0TcRahf6VtGLtRFdnkZCAvqWvwrHEg+WZMc2t6dAMIrU/cwDwYeW0qrPb56jJ8kQyVine5/ZrKzjR0trGKf0PyOJZLhcM+/pCRMIE28tu4nXO/E66543GaCLSKcmiYMrt0Yq/zokgI=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      Request-Id:
+      - 75012718-17c1-4649-b3ed-33be27d2529c
+      Client-Request-Id:
+      - 75012718-17c1-4649-b3ed-33be27d2529c
+      X-Ms-Ags-Diagnostic:
+      - '{"ServerInfo":{"DataCenter":"Germany West Central","Slice":"E","Ring":"5","ScaleUnit":"002","RoleInstance":"FR3PEPF00000294"}}'
+      Odata-Version:
+      - '4.0'
+      Date:
+      - Mon, 26 Jun 2023 05:55:42 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(''saadbinakhlaq%40outlook.com'')/todo/lists(''AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAZdgUWEAAAA'')/tasks","value":[{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXr/v+g==\"","importance":"normal","isReminderOn":false,"status":"completed","title":"What
+        about this one","createdDateTime":"2023-06-25T08:26:56.2286135Z","lastModifiedDateTime":"2023-06-25T08:36:57.0555157Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAZdgUWEAAAA1AmAD2g6mUCgDdtEXUADzAAGXr29APQAAAA=","body":{"content":"","contentType":"text"},"completedDateTime":{"dateTime":"2023-06-24T22:00:00.0000000","timeZone":"UTC"}}]}'
+  recorded_at: Mon, 26 Jun 2023 05:55:42 GMT
+- request:
+    method: get
+    uri: https://graph.microsoft.com/v1.0/me/todo/lists/AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAZdgUWFAAAA/tasks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer EwCAA8l6BAAUAOyDv0l6PcCVu89kmzvqZmkWABkAAUX2EFonmwUPl4TpAsh/pmpIeF4cGQn/YVSnw5N8/WhXx/Dvx4lcA9CB2wG0HFjLPI5GZmurGFxydgOGVZKBvROf+eiKixovilNPmVOHihCi6kIfTpI63+7BfL3dJ2iFe9kFhQx3A1iSd6ltfjpAKpm4196Bd8w/DjYlrJ3BH+yTV/qx5AgewasZBHeqjC46UcNfOcrTyj0BcpC385ZJNtJhN6OcUdG6e8HwchGbzCHfD02nE98Bzyx2BN/G1fkGWi7WWDCJfDKfbSjaGe18FLxiSQgU+e1NyNAl4fEaDrr60qyswWofpdSLTwvSzlkD95qgfczNZ6DryaQiAbuwwJwDZgAACLSV8+9VS4JxUAK+t4oh78gCe/tqNziq7GeJGqpT7EigZ1oPcviSGdy8muRojOGEBRdZ53nBc6FSQaTWHhOdhyj0r6H12DXVXLv3rt6KpnCiqNr8ywb+KBKGMDi4Q7DRdyDEkAU6YdyXwzYX9GlUy+ZQqmhio4kzqVTJhwXmrC6iUmyjAG6As2rCbC1N404kHSbRHlp7iSSnQJWdZnB7co/SYA00u1mIf+1Gf6MZ03ib54dG2oaS4N6PXWpkWg1xLbWIkJHMTjaNkAQpsLcGcslwuLrJwfEgsYvl+nyTyx8dDsdv2kAm0Lrg6tErS8IOorRS6cEBhVE0LwTb+TuW6GPA2XMlNy7+haVU1646iq7oKQLQzN5jcbDLpQ09WjnraqcVtMUER8wuhAQVYP0TDsD2o5vHGtOkEOf8IhOssFDlEdkdgTmGfw20xs1Y4TfcKCQWhfgXTKieb8jKuFUi6F2vuXt4bw0+qqJ3rlcREodIOmCYXJmMsnsWhjaR0Ta5UI5YtEKvQuDeIp2LZ3TpsfwFyLbdK0vpebqtlDLxhJ2XvYgQ8kvCWs3nayUgRlk4SKPzcwUQj4nA/ESCaNiMjC3+UEHUWO7YlW53q/TxiqVbJT0+1Zm2ZjVZvkLLgJXtDdrTkD3Q7RjypnfHhB4XC0WI2Ksbf0TcRahf6VtGLtRFdnkZCAvqWvwrHEg+WZMc2t6dAMIrU/cwDwYeW0qrPb56jJ8kQyVine5/ZrKzjR0trGKf0PyOJZLhcM+/pCRMIE28tu4nXO/E66543GaCLSKcmiYMrt0Yq/zokgI=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      Request-Id:
+      - 431e255b-59cb-4ed3-8d98-ba8e76b12c31
+      Client-Request-Id:
+      - 431e255b-59cb-4ed3-8d98-ba8e76b12c31
+      X-Ms-Ags-Diagnostic:
+      - '{"ServerInfo":{"DataCenter":"Germany West Central","Slice":"E","Ring":"5","ScaleUnit":"000","RoleInstance":"FR1PEPF000007AC"}}'
+      Odata-Version:
+      - '4.0'
+      Date:
+      - Mon, 26 Jun 2023 05:55:42 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(''saadbinakhlaq%40outlook.com'')/todo/lists(''AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAZdgUWFAAAA'')/tasks","value":[{"@odata.etag":"W/\"1AmAD2g6mUCgDdtEXUADzAAGXr/v/A==\"","importance":"normal","isReminderOn":false,"status":"completed","title":"and
+        this","createdDateTime":"2023-06-25T08:26:59.2147859Z","lastModifiedDateTime":"2023-06-25T08:37:00.3819232Z","hasAttachments":false,"categories":[],"id":"AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAEYAAAPQSNqTwhtyQoW6hAs-oHeQBwDUCYAPaDqZQKAN20RdQAPMAAZdgUWFAAAA1AmAD2g6mUCgDdtEXUADzAAGXr3B3gAAAA==","body":{"content":"","contentType":"text"},"completedDateTime":{"dateTime":"2023-06-24T22:00:00.0000000","timeZone":"UTC"}}]}'
+  recorded_at: Mon, 26 Jun 2023 05:55:42 GMT
+- request:
+    method: get
+    uri: https://graph.microsoft.com/v1.0/me/todo/lists/AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAZSK4BlAAAA/tasks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer EwCAA8l6BAAUAOyDv0l6PcCVu89kmzvqZmkWABkAAUX2EFonmwUPl4TpAsh/pmpIeF4cGQn/YVSnw5N8/WhXx/Dvx4lcA9CB2wG0HFjLPI5GZmurGFxydgOGVZKBvROf+eiKixovilNPmVOHihCi6kIfTpI63+7BfL3dJ2iFe9kFhQx3A1iSd6ltfjpAKpm4196Bd8w/DjYlrJ3BH+yTV/qx5AgewasZBHeqjC46UcNfOcrTyj0BcpC385ZJNtJhN6OcUdG6e8HwchGbzCHfD02nE98Bzyx2BN/G1fkGWi7WWDCJfDKfbSjaGe18FLxiSQgU+e1NyNAl4fEaDrr60qyswWofpdSLTwvSzlkD95qgfczNZ6DryaQiAbuwwJwDZgAACLSV8+9VS4JxUAK+t4oh78gCe/tqNziq7GeJGqpT7EigZ1oPcviSGdy8muRojOGEBRdZ53nBc6FSQaTWHhOdhyj0r6H12DXVXLv3rt6KpnCiqNr8ywb+KBKGMDi4Q7DRdyDEkAU6YdyXwzYX9GlUy+ZQqmhio4kzqVTJhwXmrC6iUmyjAG6As2rCbC1N404kHSbRHlp7iSSnQJWdZnB7co/SYA00u1mIf+1Gf6MZ03ib54dG2oaS4N6PXWpkWg1xLbWIkJHMTjaNkAQpsLcGcslwuLrJwfEgsYvl+nyTyx8dDsdv2kAm0Lrg6tErS8IOorRS6cEBhVE0LwTb+TuW6GPA2XMlNy7+haVU1646iq7oKQLQzN5jcbDLpQ09WjnraqcVtMUER8wuhAQVYP0TDsD2o5vHGtOkEOf8IhOssFDlEdkdgTmGfw20xs1Y4TfcKCQWhfgXTKieb8jKuFUi6F2vuXt4bw0+qqJ3rlcREodIOmCYXJmMsnsWhjaR0Ta5UI5YtEKvQuDeIp2LZ3TpsfwFyLbdK0vpebqtlDLxhJ2XvYgQ8kvCWs3nayUgRlk4SKPzcwUQj4nA/ESCaNiMjC3+UEHUWO7YlW53q/TxiqVbJT0+1Zm2ZjVZvkLLgJXtDdrTkD3Q7RjypnfHhB4XC0WI2Ksbf0TcRahf6VtGLtRFdnkZCAvqWvwrHEg+WZMc2t6dAMIrU/cwDwYeW0qrPb56jJ8kQyVine5/ZrKzjR0trGKf0PyOJZLhcM+/pCRMIE28tu4nXO/E66543GaCLSKcmiYMrt0Yq/zokgI=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      Request-Id:
+      - 1881371e-c178-4b0c-80d0-c2b5c93744b1
+      Client-Request-Id:
+      - 1881371e-c178-4b0c-80d0-c2b5c93744b1
+      X-Ms-Ags-Diagnostic:
+      - '{"ServerInfo":{"DataCenter":"Germany West Central","Slice":"E","Ring":"5","ScaleUnit":"000","RoleInstance":"FR1PEPF00000926"}}'
+      Odata-Version:
+      - '4.0'
+      Date:
+      - Mon, 26 Jun 2023 05:55:43 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(''saadbinakhlaq%40outlook.com'')/todo/lists(''AQMkADAwATY0MDABLTgyODktY2U5NS0wMAItMDAKAC4AAAPQSNqTwhtyQoW6hAs-oHeQAQDUCYAPaDqZQKAN20RdQAPMAAZSK4BlAAAA'')/tasks","value":[]}'
+  recorded_at: Mon, 26 Jun 2023 05:55:43 GMT
+recorded_with: VCR 6.1.0

@@ -17,7 +17,7 @@ services:
     volumes:
        - ./:/opt/app
     ports:
-      - "3000:3000"
+      - "5000:5000"
     depends_on:
       - database
     env_file:

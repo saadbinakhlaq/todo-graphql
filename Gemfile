@@ -36,6 +36,10 @@ gem "graphiql-rails", group: :development
 gem "graphql"
 gem "sprockets-rails"
 gem "jwt"
+gem "search_object_graphql"
+gem "httparty"
+gem "vcr"
+gem "webmock"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

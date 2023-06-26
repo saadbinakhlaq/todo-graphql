@@ -1,4 +1,7 @@
 class Task < ApplicationRecord
   belongs_to :list
-  validates :name, presence: true
+  has_one :external_todo_task, dependent: :destroy
+
+  scope :not_done, -> { where(done: false) }
+  scope :done, -> { where(done: true) }
 end
